@@ -1,6 +1,7 @@
 import styles from './Avatar.module.css';
 import { Flex, Avatar } from '@radix-ui/themes';
 import { ReactNode } from 'react';
+import 'src/assets/final.jpg';
 
 /* eslint-disable-next-line */
 export interface AvatarProps {
@@ -11,15 +12,11 @@ export interface AvatarProps {
 export function MyAvatar({ fallback, src }: AvatarProps) {
   return (
     <div>
-      <Flex gap="2">
+      <Flex gap="2" justify="center">
         <Avatar
           size="9"
           radius="full"
-          src={
-            src
-              ? src
-              : 'https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?&w=256&h=256&q=70&crop=focalpoint&fp-x=0.5&fp-y=0.3&fp-z=1&fit=crop'
-          }
+          src={src ? src : `src/assets/final.jpg`}
           fallback={fallback ? fallback : 'A'}
         />
       </Flex>

@@ -1,4 +1,3 @@
-import styles from './Header.module.css';
 import { Box, Section, Grid, Flex } from '@radix-ui/themes';
 import { InitialsCircle } from './InitialsCircle';
 import { ContactButton } from '../../ContactButton/ContactButton';
